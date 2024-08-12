@@ -1,0 +1,312 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(imagenes/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 50px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    margin-bottom: 10px;
+}
+
+#inicio p{
+    font-size: 25px;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Estilo general de la sección de habilidades */
+.habilidades-contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lenguajes, .otras-habilidades {
+    width: 48%;
+}
+
+.habilidad-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.habilidad-item img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.habilidad-item p {
+    margin: 0;
+}
+
+.logo {
+    width: 5%;
+    padding: 0%;
+    margin: 0%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .habilidades-contenedor {/* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url(imagenes/fondo.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        header nav ul li {
+            margin: 0 15px;
+        }
+        
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.527);
+            backdrop-filter: blur(5px);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h1, section h2 {
+            margin-bottom: 10px;
+        }
+        
+        section p, section ul {
+            margin-bottom: 20px;
+        }
+        
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        section ul li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        /* Estilo general de la sección de habilidades */
+        .habilidades-contenedor {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .lenguajes {
+            width: 48%;
+        }
+        
+        .otras-habilidades {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .habilidad-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .habilidad-item img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+        
+        .habilidad-item p {
+            margin: 0;
+        }
+        
+        /* Estilos para los contenedores individuales */
+        .frameworks-container, .bd-container, .versiones-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            width: 5%;
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+            }
+        
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        
+            .habilidades-contenedor {
+                flex-direction: column;
+            }
+        
+            .lenguajes, .otras-habilidades {
+                width: 100%;
+            }
+        }
+        
+        flex-direction: column;
+    }
+
+    .lenguajes, .otras-habilidades {
+        width: 100%;
+    }
+}
