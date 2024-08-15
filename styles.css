@@ -63,6 +63,21 @@ section h1, section h2 {
     margin-bottom: 10px;
 }
 
+#inicio {
+    position: relative; /* Permite que el avatar se posicione relativamente */
+}
+
+#inicio img {
+    position: absolute; /* Posiciona el avatar de manera absoluta */
+    right: 0; /* Mueve el avatar hacia la derecha */
+    top: 50%; /* Centra verticalmente el avatar */
+    transform: translateY(-50%); /* Ajusta el centro del avatar */
+    max-width: 150px; /* Ajusta el tamaño del avatar */
+    height: auto;
+    border-radius: 50%; /* Hace que la imagen sea circular, si es cuadrada */
+    margin-right: 5%;
+}
+
 #inicio p{
     font-size: 25px;
 }
@@ -90,6 +105,12 @@ section ul li {
     gap: 20px;
 }
 
+.habilidades-contenedor section{
+    background-color: rgba(146, 146, 146, 0.527);
+    backdrop-filter: blur(5px);
+}
+
+
 .lenguajes, .otras-habilidades {
     width: 48%;
 }
@@ -98,6 +119,10 @@ section ul li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.html, .css, .php, .js, .python{
+    margin-bottom: 7.5%;
 }
 
 .habilidad-item img {
@@ -115,6 +140,70 @@ section ul li {
     padding: 0%;
     margin: 0%;
 }
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.carousel-control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.carousel-control.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carousel-control.next {
+    right: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
 
 footer {
     text-align: center;

@@ -22,15 +22,15 @@
     </header>
 
     <section id="inicio">
-        <h1>Hola, soy Nicolas</h1>
-        <p>Tecnico en informatica, desarrollador fullstack.</p>
+        <h1>Hola, soy Nicolás</h1>
+        <p>Técnico en informática, desarrollador fullstack.</p>
+        <img src="imagenes/avataaars.svg" alt="avatar">
     </section>
 
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <p>Soy un chico interesado en la informatica en general desde pequeno, 
-        empeze a programar gracias a mi escuela secundaria, 
-        me gustaria especializarme en el desarrollo backend.</p>
+        <p>Soy un chico interesado en la informática en general desde pequeño. 
+        Empecé a programar gracias a mi escuela secundaria y me gustaría especializarme en el desarrollo backend.</p>
     </section>
 
     <section id="habilidades">
@@ -38,26 +38,30 @@
         <div class="habilidades-contenedor">
             <section class="lenguajes">
                 <h3>Lenguajes</h3>
-                <div class="habilidad-item">
+                <div class="habilidad-item html">
                     <img class="logo" src="imagenes/habilidades/html.svg" alt="HTML logo">
                     <p>HTML</p>
                 </div>
-                <div class="habilidad-item">
+                <div class="habilidad-item css">
                     <img class="logo" src="imagenes/habilidades/css.svg" alt="CSS logo">
                     <p>CSS</p>
                 </div>
-                <div class="habilidad-item">
+                <div class="habilidad-item php">
                     <img class="logo" src="imagenes/habilidades/php.svg" alt="PHP logo">
                     <p>PHP</p>
                 </div>
-                <div class="habilidad-item">
+                <div class="habilidad-item js">
                     <img class="logo" src="imagenes/habilidades/js.svg" alt="JavaScript logo">
                     <p>JavaScript</p>
                 </div>
-                <div class="habilidad-item">
+                <div class="habilidad-item python">
                     <img class="logo" src="imagenes/habilidades/python.svg" alt="Python logo">
                     <p>Python</p>
                 </div>
+                <div class="habilidad-item c++">
+                    <img class="logo" src="imagenes/habilidades/c.svg" alt="C++ logo">
+                    <p>C++</p>
+                </div>                
             </section>
 
             <div class="otras-habilidades">
@@ -95,22 +99,55 @@
             </div>
         </div>
     </section>
-    
-    
-
-    <section id="estudios">
-        <h2>Estudios</h2>
-        <p>Colegio secundario: EPET N3</p>
-    </section>
-
+     
     <section id="proyectos">
         <h2>Proyectos</h2>
-        <p>Aquí se mostrarán tus proyectos.</p>
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="imagenes/proyectos/proyecto1.png" alt="Descripción del proyecto">
+                <div class="carousel-caption">
+                    <h3>Título del Proyecto </h3>
+                    <p>Descripción del proyecto...</p>
+                    <div class="carousel-tech">
+                        <p>Tecnologías usadas: HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>            
+            <div class="carousel-item active">
+                <img src="imagenes/proyectos/proyecto2.png" alt="Descripción del proyecto">
+                <div class="carousel-caption">
+                    <h3>Título del Proyecto</h3>
+                    <p>Descripción del proyecto...</p>
+                    <div class="carousel-tech">
+                        <p>Tecnologías usadas: HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>            
+            <div class="carousel-item active">
+                <img src="imagenes/proyectos/proyecto3.png" alt="Descripción del proyecto">
+                <div class="carousel-caption">
+                    <h3>Título del Proyecto</h3>
+                    <p>Descripción del proyecto...</p>
+                    <div class="carousel-tech">
+                        <p>Tecnologías usadas: HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
     </section>
+    
 
     <section id="experiencia">
         <h2>Experiencia laboral</h2>
         <p>Detalles sobre tu experiencia laboral.</p>
+    </section>
+
+    <section id="estudios">
+        <h2>Estudios</h2>
+        <p>Colegio secundario: EPET N3</p>
+        <p>Completo, Titulo: Tecnico en informatica profesional y personal</p>
     </section>
 
     <section id="contacto">
