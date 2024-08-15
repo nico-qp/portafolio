@@ -63,6 +63,21 @@ section h1, section h2 {
     margin-bottom: 10px;
 }
 
+#inicio {
+    position: relative; /* Permite que el avatar se posicione relativamente */
+}
+
+#inicio img {
+    position: absolute; /* Posiciona el avatar de manera absoluta */
+    right: 0; /* Mueve el avatar hacia la derecha */
+    top: 50%; /* Centra verticalmente el avatar */
+    transform: translateY(-50%); /* Ajusta el centro del avatar */
+    max-width: 150px; /* Ajusta el tamaño del avatar */
+    height: auto;
+    border-radius: 50%; /* Hace que la imagen sea circular, si es cuadrada */
+    margin-right: 5%;
+}
+
 #inicio p{
     font-size: 25px;
 }
