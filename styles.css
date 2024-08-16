@@ -45,6 +45,10 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+hr{
+    margin-bottom: 2%;
+}
+
 h1{
     font-size: 50px;
 }
