@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +9,8 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-image: url(imagenes/fondo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(imagenes/fondo.png);
+    background-repeat: repeat;
 }
 
 header {
